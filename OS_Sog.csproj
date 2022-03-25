@@ -157,14 +157,14 @@
     <Content Include="assets\images\flags.png" />
     <Content Include="assets\images\flags_292X40.png" />
     <Content Include="assets\images\flags_800X110.png" />
-    <Content Include="assets\images\icon_extension.png" />
+    <Content Include="assets\images\i502club_logo.png" />
     <Content Include="assets\images\os_logo.png" />
     <Content Include="assets\images\os_logo_150X29.png" />
     <Content Include="assets\images\plugin_installed.png" />
-    <Content Include="assets\images\settings.png" />
     <Content Include="assets\images\sog_logo.png" />
     <Content Include="assets\images\sog_screenshot.png" />
     <Content Include="assets\images\sog_screenshot2.png" />
+    <Content Include="assets\images\settings.png" />
     <Content Include="Installation\pluginOS_Sog.xml" />
     <Content Include="License.txt" />
     <Content Include="Payment.ascx">
@@ -183,7 +183,6 @@
     <None Include="assets\images\cc_form.pdn" />
     <None Include="assets\images\flags.pdn" />
     <None Include="assets\images\plugin_installed.pdn" />
-    <None Include="assets\images\settings.pdn" />
     <None Include="BuildScripts\ModulePackage.targets" />
     <None Include="BuildScripts\MSBuild.Community.Tasks.Targets" />
     <None Include="OS_Sog.dnn" />
