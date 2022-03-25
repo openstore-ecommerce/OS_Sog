@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
 	<packages>
-		<package name="OS_Sog" type="Module" version="1.0.0">
+		<package name="OS_Sog" type="Module" version="0.0.1">
 			<friendlyName>OS_Sog</friendlyName>
 			<description>OS_Sog is a Square payment provider for Open Store</description>
       <iconFile>~/desktopmodules/OS_Sog/themes/config/img/icon_extension.png</iconFile>
