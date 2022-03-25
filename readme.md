@@ -4,8 +4,8 @@ A DNN OpenStore payment provider plugin
 ## Getting Started
 This is a payment provider plugin for [![OpenStore Ecommerce](assets/images/os_logo_150X29.png)](https://www.openstore-ecommerce.com/en-gb/OpenStore). It will enable any 
 DNN 9.4+ site running OpenStore to accept CC payments into their [SogeEcommerce](https://sogecommerce.societegenerale.eu/doc/en-EN/) account.  You must 
-have a valid merchant account and a [javascript client](https://sogecommerce.societegenerale.eu/doc/en-EN/) 
- key for this provider to work.
+have a valid [merchant account](https://sogecommerce.societegenerale.eu/doc/en-EN/) for real transactions to work.  Testing the form based payments 
+does not require an account and can be done using the publicly available credentials.
 
 ### About the Install
 
