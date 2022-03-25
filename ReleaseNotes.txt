@@ -1,8 +1,8 @@
 ﻿<h3>OS Square</h3>
 <p class="Contributor">
 	i502 Club<br />
-	<a href="mailto:info@i502.club">info@i502.club</a><br />
-	<a href="https://www.i502.club">www.i502.club</a><br />
+	<a href="mailto:"></a><br />
+	<a href="https:"></a><br />
 </p>
 <hr/>
 <div class="License">
