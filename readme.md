@@ -27,7 +27,7 @@ inputs.  It's required for encrypting your Sog credentials.
 
 
 
-3. See Sog's [developers](https://https://www.societegenerale.com/) portal for your username, password, public key 
+3. See Sog's [developers](https://www.societegenerale.com/) portal for your username, password, public key 
 and hash keys.  These are required for the form based payments.  If you are using the IPN you are not required 
 to enter the hash key.
 
