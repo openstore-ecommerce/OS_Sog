@@ -81,6 +81,7 @@ form which is the successor to OS_Sips. The plugin provides support for form and
 
 ## Authors
 [![i502 Club](assets/images/i502club_logo.png)](https://www.i502.club) [i502 Club](https://www.i502.club)
+
 [Agencie Sesame](https://www.agence-sesame.fr)
 
 This project was built using templates provided for the OpenStore community, examples which 
