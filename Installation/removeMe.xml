@@ -1,0 +1,8 @@
+<!-- place this file in the NBrightBuy/plugins dir to remove the plugin from 
+the Open Store Back Offic admin panel -->
+<genxml>
+	<delete>True</delete>
+	<textbox>
+		<ctrl>OS_Sog</ctrl>
+	</textbox>
+</genxml>

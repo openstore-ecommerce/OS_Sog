@@ -1,0 +1,22 @@
+﻿#sog-container {
+    max-width:250px;
+    margin:auto;
+}
+
+#card-container {
+    padding: 0 .2em .5em 0em;
+}
+
+#sog-container a.kr-payment-button {
+    width: 120px !important;
+}
+
+#sog-container .buyer-inputs input {
+    margin: .5em .2em;
+}
+
+@media only screen and (min-width: 410px) {
+    #sog-container h3, #sog-container div.defaultmessage {
+        white-space: nowrap;
+    }
+}

@@ -1,0 +1,19 @@
+﻿<h3>OS Square</h3>
+<p class="Contributor">
+	i502 Club<br />
+	<a href="mailto:info@i502.club">info@i502.club</a><br />
+	<a href="https://www.i502.club">www.i502.club</a><br />
+</p>
+<hr/>
+<div class="License">
+	<h3>About OS Sog</h3>
+	<p class="Owner">
+		<b>Version 1.0.0</b><br /><br />
+	</p>
+	<p>Payment provider module for Open Store to enable Square Credit Card Payments.</p><br />
+	<h4>Version 1.0.0</h4>
+	<ul>
+		<li>Inital Embedded Form release</li>
+	</ul>
+	<hr />
+</div>

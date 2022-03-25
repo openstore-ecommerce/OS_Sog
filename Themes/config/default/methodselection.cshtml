@@ -1,0 +1,70 @@
+@inherits NBrightBuy.render.NBrightBuyRazorTokens<NBrightDNN.NBrightRazor>
+@using System.Linq
+@using DotNetNuke.Common
+@using DotNetNuke.Entities.Portals
+@using DotNetNuke.Entities.Users
+@using NBrightDNN
+@using Nevoweb.DNN.NBrightBuy.Components
+
+@AddMetaData("resourcepath", "/DesktopModules/NBright/OS_Sog/App_LocalResources")
+@AddMetaData("resourcepath", "/DesktopModules/NBright/NBrightBuy/App_LocalResources/")
+
+@{
+    var info = (NBrightInfo)Model.List.First();
+}
+
+@{
+    var sandboxmode = info.GetXmlPropertyBool("genxml/checkbox/sandboxmode");
+}
+<script src="https://api-sogecommerce.societegenerale.eu/static/js/krypton-client/V4.0/stable/kr-payment-form.min.js"
+        kr-public-key="@info.GetXmlProperty("genxml/textbox/publickey")"
+        kr-post-url-success="/payment?provider=os_sog">
+</script>
+<link rel="stylesheet" href="https://api-sogecommerce.societegenerale.eu/static/js/krypton-client/V4.0/ext/classic-reset.css">
+<script src="https://api-sogecommerce.societegenerale.eu/static/js/krypton-client/V4.0/ext/classic.js"></script>
+<script type="text/javascript" src="/DesktopModules/NBright/OS_Sog/themes/config/js/jquery.cookie.min.js"></script>
+<script type="text/javascript" src="/DesktopModules/NBright/OS_Sog/themes/config/js/OS_Sog.js"></script>
+<link rel="stylesheet" href="/DesktopModules/NBright/OS_Sog/themes/config/css/ossog.css">
+
+<div>
+    <script type="text/javascript">
+        const javascriptClientId = '@info.GetXmlProperty("genxml/textbox/username", true)';
+
+        document.addEventListener('DOMContentLoaded', async function () {
+
+            const cardButton = document.getElementsByClassName(
+                'kr-payment-button'
+            )[0];
+
+            cardButton.addEventListener('click', async function (event) {
+                await handlePaymentMethodSubmission(event, card);
+            });
+
+            nbxget('OS_Sog_tokenize', '.OS_Sogdata', '.OS_Sogdata');
+        });
+
+    </script>
+
+    <div class="OS_Sogdata" style="display:none">
+        <input type="hidden" id="formToken" />
+        <input type="hidden" id="orderId" />
+    </div>
+    <div id="sog-container">
+        <h3>@ResourceKey("Payment.PaymentFormTitle")</h3>
+        <div class="kr-embedded"
+             kr-form-token="DEMO-TOKEN-TO-BE-REPLACED">
+
+            <!-- payment form fields -->
+            <div class="kr-pan"></div>
+            <div class="kr-expiry"></div>
+            <div class="kr-security-code"></div>
+
+            <!-- payment form submit button -->
+            <button class="kr-payment-button"></button>
+
+            <!-- error zone -->
+            <div class="kr-form-error"></div>
+        </div>
+    </div>
+    <hr />
+</div>
