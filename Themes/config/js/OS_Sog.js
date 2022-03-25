@@ -31,14 +31,11 @@ $(document).ready(function () {
                         
         }
         else if (e.cmd == 'OS_Sog_tokenize') {
-            //$("#sog-container .kr-embedded").attr("kr-form-token", $(".OS_Sogdata").text());
             // Set form token
             KR.setFormToken($(".OS_Sogdata").text());
 
             // Add listener for submit event
             KR.onSubmit(onPaid);
-            //$(".OS_Sogdata").text('');  
-            $("#sog-container").removeClass("hidden");
         }
 
     };
