@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace OS_Sog.Models
+﻿namespace OS_Sog.Models
 {
     public class TokenResponse
     {
