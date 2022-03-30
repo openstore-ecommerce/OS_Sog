@@ -136,7 +136,7 @@
     <value>Embedded form public key from your Sog account</value>
   </data>
   <data name="sandboxmode.Text" xml:space="preserve">
-    <value>Activate the sandbox mode to use the Sog test password.  You can test without a Sog account.  If you test without an account you must also use the publicly available user name, password &amp; hash key.</value>
+    <value>Activate the sandbox mode to use the Sog test password.  You can test without a Sog account.  If you test without an account you must also use the publicly available user name, password and hash key.</value>
   </data>
   <data name="SettingsBoxName.Text" xml:space="preserve">
     <value>OS_Sog Payment</value>
