@@ -8,9 +8,16 @@
 <div class="License">
 	<h3>About OS Sog</h3>
 	<p class="Owner">
-		<b>Version 0.0.1</b><br /><br />
+		<b>Version 0.0.2</b><br /><br />
 	</p>
 	<p>Payment provider module for Open Store to enable Sogecommerce Credit Card Payments.</p><br />
+	<h4>Version 0.0.2</h4>
+	<ul>
+		<li>Add currency codes</li>
+		<li>Fix settings save</li>
+		<li>General fixes</li>
+	</ul>
+	<hr />
 	<h4>Version 0.0.1</h4>
 	<ul>
 		<li>Inital Embedded Form release</li>
