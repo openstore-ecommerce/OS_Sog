@@ -3,7 +3,7 @@
     <index datatype="double">99</index>
   </hidden>
   <textbox>
-    <ctrl update="save">OS_Sog</ctrl>
+    <ctrl update="save">os_sog</ctrl>
     <name update="save">OS_Sog Payment</name>
     <icon update="save" />
     <group update="save">Admin</group>
