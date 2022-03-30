@@ -1,6 +1,6 @@
 ﻿<h3>OS Sog</h3>
 <p class="Contributor">
-	i502 Club<br />
+	<br />
 	<a href="mailto:"></a><br />
 	<a href="https:"></a><br />
 </p>
