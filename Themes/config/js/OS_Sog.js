@@ -33,9 +33,6 @@ $(document).ready(function () {
         else if (e.cmd == 'OS_Sog_tokenize') {
             // Set form token
             KR.setFormToken($(".OS_Sogdata").text());
-
-            // Add listener for submit event
-            KR.onSubmit(onPaid);
         }
 
     };
