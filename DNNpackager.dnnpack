@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <version>1.0.0</version>
+  <websitedestrelpath>\DesktopModules\NBright\OS_sog</websitedestrelpath>
+  <websitedestbinrelpath>\bin</websitedestbinrelpath>
+  <!-- Include only files that match the regular expression -->
+  <regexpr>(\.cshtml|\.html|\.resx|\.dnn|\.png|\.jpg|\.gif|\.css|\.svg|\.js|\.xml|\.txt|\.md|\.aspx|\.ascx|\.ashx|\.woff|\.woff2|\.ttf|\.rules)$</regexpr>
+  <directory include='false'>
+    <!-- All paths should be from the source root (project root) -->
+    <value>\.git</value>
+    <value>\.vs</value>
+    <value>\bin</value>
+    <value>\obj</value>
+    <value>\Components</value>
+    <value>\Documentation</value>
+    <value>\Examples</value>
+    <value>\Installation\Dist</value>
+    <value>\packages</value>
+    <value>\Render</value>
+    <value>\SQL</value>
+    <value>\_external</value>
+  </directory>
+  <file include='false'>
+  </file>
+  <file include='true'>
+    <value>\Installation\pluginOS_Sog.xml</value>
+  </file>
+  <assembly>
+    <value>OS_sog.dll</value>
+    <value>OS_sog.pdb</value>
+  </assembly>
+</root>

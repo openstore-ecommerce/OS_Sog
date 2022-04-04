@@ -20,7 +20,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>bin\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>0</WarningLevel>
@@ -29,7 +29,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>bin\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -39,14 +39,11 @@
     <RunPostBuildEvent>Always</RunPostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DotNetNuke, Version=6.0.0.2982, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\bin\DotNetNuke.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="DotNetNuke">
+      <HintPath>..\NBrightBuy\_external\DotNetNuke.dll</HintPath>
     </Reference>
     <Reference Include="DotNetNuke.Abstractions">
-      <HintPath>..\..\..\bin\DotNetNuke.Abstractions.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\NBrightBuy\_external\DotNetNuke.Abstractions.dll</HintPath>
     </Reference>
     <Reference Include="DotNetNuke.DependencyInjection, Version=9.9.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\DotNetNuke.DependencyInjection.9.9.1\lib\netstandard2.0\DotNetNuke.DependencyInjection.dll</HintPath>
@@ -60,23 +57,17 @@
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=5.0.0.1, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.Extensions.DependencyInjection.5.0.1\lib\net461\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    <Reference Include="Microsoft.Extensions.DependencyInjection">
+      <HintPath>..\NBrightBuy\_external\Microsoft.Extensions.DependencyInjection.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>packages\Microsoft.Extensions.DependencyInjection.Abstractions.5.0.0\lib\net461\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
-    </Reference>
-    <Reference Include="NBrightBuy">
-      <HintPath>..\..\..\bin\NBrightBuy.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions">
+      <HintPath>..\NBrightBuy\_external\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
     </Reference>
     <Reference Include="NBrightCore">
-      <HintPath>..\..\..\bin\NBrightCore.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\NBrightBuy\_external\NBrightCore.dll</HintPath>
     </Reference>
     <Reference Include="NBrightDNN">
-      <HintPath>..\..\..\bin\NBrightDNN.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\NBrightBuy\_external\NBrightDNN.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -85,10 +76,8 @@
     <Reference Include="Polly, Version=7.0.0.0, Culture=neutral, PublicKeyToken=c8a3ffc3f8f825cc, processorArchitecture=MSIL">
       <HintPath>packages\Polly.7.2.2\lib\net472\Polly.dll</HintPath>
     </Reference>
-    <Reference Include="RazorEngine, Version=3.7.7.0, Culture=neutral, PublicKeyToken=9ee697374c7e744a, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\bin\RazorEngine.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="RazorEngine">
+      <HintPath>..\NBrightBuy\_external\RazorEngine.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
@@ -175,16 +164,13 @@
       <SubType>ASPXCodeBehind</SubType>
     </Content>
     <Content Include="Themes\config\css\ossog.css" />
-    <Content Include="Themes\config\img\icon_extension.png" />
     <Content Include="Themes\config\img\logo.png" />
-    <Content Include="Themes\config\img\square-pay.png" />
     <Content Include="Themes\config\js\OS_Sog.js" />
-    <None Include="app.config" />
     <None Include="assets\images\cc_form.pdn" />
     <None Include="assets\images\flags.pdn" />
     <None Include="assets\images\plugin_installed.pdn" />
-    <None Include="BuildScripts\ModulePackage.targets" />
-    <None Include="BuildScripts\MSBuild.Community.Tasks.Targets" />
+    <None Include="dnnpack.config" />
+    <None Include="DNNpackager.dnnpack" />
     <None Include="OS_Sog.dnn" />
     <None Include="packages.config" />
     <None Include="readme.md" />
@@ -230,11 +216,15 @@
   <ItemGroup>
     <Folder Include="Themes\config\resx\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NBrightBuy\NBrightBuy.csproj">
+      <Project>{8f850303-bec5-4247-9126-1e58f1402205}</Project>
+      <Name>NBrightBuy</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>copy "$(TargetFileName)" "..\..\..\..\..\bin\$(TargetFileName)"
-
-copy "$(AssemblyName).pdb" "..\..\..\..\..\bin\$(AssemblyName).pdb"
+    <PostBuildEvent>DNNpackager.exe  $(ProjectDir) $(ProjectDir)$(OutDir) $(ConfigurationName)
 </PostBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
@@ -242,8 +232,7 @@ copy "$(AssemblyName).pdb" "..\..\..\..\..\bin\$(AssemblyName).pdb"
     <DNNFileName>OS_Sog</DNNFileName>
     <PackageName>OS_Sog</PackageName>
   </PropertyGroup>
-  <Import Project="BuildScripts\ModulePackage.Targets" />
-  <Target Name="AfterBuild" DependsOnTargets="PackageModule">
+  <Target Name="AfterBuild">
   </Target>
   <Import Project="packages\NETStandard.Library.2.0.3\build\netstandard2.0\NETStandard.Library.targets" Condition="Exists('packages\NETStandard.Library.2.0.3\build\netstandard2.0\NETStandard.Library.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

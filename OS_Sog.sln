@@ -1,4 +1,3 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29318.209
@@ -7,16 +6,23 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OS_Sog", "OS_Sog.csproj", "
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{56236091-D7B9-4AB1-8AD2-C37D680FBACF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NBrightBuy", "..\NBrightBuy\NBrightBuy.csproj", "{8F850303-BEC5-4247-9126-1E58F1402205}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Razor|Any CPU = Razor|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{E3F7BEF4-534A-4A3C-AC71-377A04DFAD10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E3F7BEF4-534A-4A3C-AC71-377A04DFAD10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3F7BEF4-534A-4A3C-AC71-377A04DFAD10}.Razor|Any CPU.ActiveCfg = Release|Any CPU
 		{E3F7BEF4-534A-4A3C-AC71-377A04DFAD10}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E3F7BEF4-534A-4A3C-AC71-377A04DFAD10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F850303-BEC5-4247-9126-1E58F1402205}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F850303-BEC5-4247-9126-1E58F1402205}.Razor|Any CPU.ActiveCfg = Razor|Any CPU
+		{8F850303-BEC5-4247-9126-1E58F1402205}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
