@@ -16,7 +16,7 @@ namespace OS_Sog
 
         static ProviderUtils() {
             _settings = ProviderUtils.GetProviderSettings();
-            var accessToken = NBrightCore.common.Security.Decrypt(PortalController.Instance.GetCurrentSettings().GUID.ToString(), _settings.GetXmlProperty("genxml/textbox/accesstoken"));
+            var accessToken = NBrightCore.common.Security.Decrypt(PortalSettings.Current.GUID.ToString(), _settings.GetXmlProperty("genxml/textbox/accesstoken"));
             var sandboxMode = _settings.GetXmlPropertyBool("genxml/checkbox/sandboxmode");
             
         }

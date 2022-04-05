@@ -36,12 +36,12 @@ namespace OS_Sog
                     break;
                 case "OS_Sog_tokenize":
                     var settings = ProviderUtils.GetProviderSettings();
-                    var userName = NBrightCore.common.Security.Decrypt(PortalController.Instance.GetCurrentSettings().GUID.ToString(), settings.GetXmlProperty("genxml/textbox/username"));
-                    var password = NBrightCore.common.Security.Decrypt(PortalController.Instance.GetCurrentSettings().GUID.ToString(), settings.GetXmlProperty("genxml/textbox/productionpassword"));
+                    var userName = NBrightCore.common.Security.Decrypt(PortalSettings.Current.GUID.ToString(), settings.GetXmlProperty("genxml/textbox/username"));
+                    var password = NBrightCore.common.Security.Decrypt(PortalSettings.Current.GUID.ToString(), settings.GetXmlProperty("genxml/textbox/productionpassword"));
                     var sandboxMode = settings.GetXmlPropertyBool("genxml/checkbox/sandboxmode");
                     if (sandboxMode)
                     {
-                        password = NBrightCore.common.Security.Decrypt(PortalController.Instance.GetCurrentSettings().GUID.ToString(), settings.GetXmlProperty("genxml/textbox/testpassword"));
+                        password = NBrightCore.common.Security.Decrypt(PortalSettings.Current.GUID.ToString(), settings.GetXmlProperty("genxml/textbox/testpassword"));
                     }
 
                     var stringToEncode = userName + ":" + password;

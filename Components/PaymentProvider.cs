@@ -58,7 +58,7 @@ namespace OS_Sog
                 //get plugin settings
                 var objCtrl = new NBrightBuyController();
                 var info = objCtrl.GetPluginSinglePageData("OS_Sogpayment", "OS_SogPAYMENT", Utils.GetCurrentCulture());
-                var hashkey = NBrightCore.common.Security.Decrypt(PortalController.Instance.GetCurrentSettings().GUID.ToString(), info.GetXmlProperty("genxml/textbox/hashkey"));
+                var hashkey = NBrightCore.common.Security.Decrypt(PortalSettings.Current.GUID.ToString(), info.GetXmlProperty("genxml/textbox/hashkey"));
 
                 var shaKeyBytes = System.Text.Encoding.UTF8.GetBytes(hashkey);
 
