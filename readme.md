@@ -1,6 +1,8 @@
 # OS_Sog
 A DNN OpenStore payment provider plugin
 
+##NOTE: Requires REST API activated
+
 ## Getting Started
 This is a payment provider plugin for [![OpenStore Ecommerce](assets/images/os_logo_150X29.png)](https://www.openstore-ecommerce.com/en-gb/OpenStore). It will enable any 
 DNN 9.4+ site running OpenStore to accept CC payments into their [SogeEcommerce](https://sogecommerce.societegenerale.eu/doc/en-EN/) account.  You must 
