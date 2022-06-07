@@ -1,7 +1,7 @@
 # OS_Sog
 A DNN OpenStore payment provider plugin
 
-##NOTE: Requires REST API activated
+## NOTE: Requires REST API activated
 
 ## Getting Started
 This is a payment provider plugin for [![OpenStore Ecommerce](assets/images/os_logo_150X29.png)](https://www.openstore-ecommerce.com/en-gb/OpenStore). It will enable any 
